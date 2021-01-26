@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Prova</title>
+</head>
+
+<body>
+    <h3>Média de gerações Brasil</h3>
+    <br>
+</body>
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoInicial = 1500;
+    var anoAtual = 2020;
+    var mediaGeracao = 28;
+
+    mostra("Total de gerações que se passaram é : " + ((anoAtual - anoInicial) / mediaGeracao));
+    
+</script>
+
+</html>
