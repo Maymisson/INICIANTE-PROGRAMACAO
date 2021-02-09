@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+
+<body>
+    <h3>Login</h3>
+    <br>
+</body>
+
+<script>
+
+    var loginCadastrado = "magno";
+    var senhaCadastrada = "123456";
+
+    var maxTentativa = 3;
+    var tentativa = 1;
+
+    while (tentativa <= maxTentativa) {
+
+        var loginInformado = prompt("Informe seu login :");
+        var senhaInformada = prompt("Informe sua senha :");
+
+        if (loginCadastrado == loginInformado && senhaCadastrada == senhaInformada) {
+            alert("Bem-vindo ao sistema " + loginInformado);
+            tentativa = maxTentativa;
+            document.write("** BEM-VINDO **");
+            document.write("<br>");
+            document.write("-----------------------");
+            document.write("<br>");
+            document.write("Login : " + loginInformado);
+            document.write("<br>");
+            document.write("-----------------------");
+            document.write("<br>");
+            document.write("Senha : " + senhaInformada);
+            document.write("<br>");
+            document.write("-----------------------");
+        } else if (tentativa == 3) {
+            alert("Número permitido de tentativas ultrapassado !");
+            document.write("** NOT FOUND 404 **");
+        } else {
+            alert("Login inválido. Tente novamente");
+        }
+        tentativa += 1;
+    }
+
+</script>
+
+</html>
