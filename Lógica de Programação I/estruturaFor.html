@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estrutura FOR</title>
+</head>
+
+<body>
+    <h3>Estrutura FOR</h3>
+    <br>
+</body>
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var num = parseInt(prompt("Informe o número da tabuada :"));
+
+    for (var multiplicador = 1; multiplicador <= 10; multiplicador++) {
+        mostra(num * multiplicador);
+        mostra("------------------");
+    }
+
+    mostra("**FIM**");
+
+</script>
+
+</html>
