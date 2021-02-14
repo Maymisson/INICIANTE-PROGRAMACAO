@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Acumulando valores</title>
+</head>
+
+<body>
+    <h3>Acumulando valores</h3>
+    <br>
+</body>
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var totalFamilliares = parseInt(prompt("Quantidade de Familiares?"));
+    var numero = 1;
+    var totalIdades = 0;
+
+    while (numero <= totalFamilliares) {
+        var idade = parseInt(prompt("Informe a idade do familiar"));
+        totalIdades = totalIdades + idade;
+        numero++;
+    }
+
+    var media = totalIdades /totalFamilliares;
+
+    mostra("A média das idades dos familiares é " + media);
+    mostra("**FIM**");
+
+</script>
+
+</html>
