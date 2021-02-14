@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuada</title>
+</head>
+
+<body>
+    <h3>Tabuada</h3>
+    <br>
+</body>
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var multiplicador = 1;
+
+    var num = parseInt(prompt("Informe o número da tabuada :"));
+    
+    mostra("<h4>" + "Tabuada do número : " + num + "</h4>");
+
+    while (multiplicador <= 10) {
+        mostra(num * multiplicador);
+        multiplicador += 1;
+        mostra("------------------");
+    }
+
+    mostra("**FIM**");
+
+</script>
+
+</html>
