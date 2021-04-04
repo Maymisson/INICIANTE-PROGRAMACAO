@@ -8,9 +8,14 @@ function draw() {
   background(imageRoad);
   showActor();
   moveActor();
-  showCar();
-  moveCar();
-  startpointCar()
+  showCarsRigth();
+  showCarsLeft();
+  moveCarsLeft();
+  moveCarsRight();
+  startpointCarsRight();
+  startpointCarsLeft();
+  checkCollisionLeft();
+  checkCollisionRight();
 }
 
 
