@@ -21,12 +21,12 @@ let wCar3 = 45;
 let hCar3 = 45;
 */
 
-let xCarsRight = [500, 490, 495];
-let xCarsLeft = [5, 10, 20];
+let xCarsRight = [500, 500, 500];
+let xCarsLeft = [5, 5, 5];
 let yCarsRight = [255, 233, 127];
-let yCarsLeft = [300, 40, 80];
-let speedCarsRight = [3, 3.5, 4];
-let speedCarsLeft = [3, 4, 2.5];
+let yCarsLeft = [24, 50, 190];
+let speedCarsRight = [4, 5.5, 6];
+let speedCarsLeft = [6, 5, 3.6];
 let wCars = 42;
 let hCars = 20
 
@@ -47,7 +47,7 @@ function showCarsLeft() {
 function moveCarsLeft() {
    for(let i = 0; i < imageCarsLeft.length; i++) {
       xCarsLeft[i] += speedCarsLeft[i];
-   }  
+   } 
 }
 
 
@@ -57,7 +57,7 @@ function moveCarsRight() {
    }  
 }
 
-function startpointCarsRight() {
+function startPointCarsRight() {
   for(let i = 0; i < imageCarsRight.length; i++) {
     if (screenPasseRight(xCarsRight[i])) {
       xCarsRight[i] = 500;
@@ -66,7 +66,7 @@ function startpointCarsRight() {
 }
 
 
-function startpointCarsLeft() {
+function startPointCarsLeft() {
   for(let i = 0; i < imageCarsLeft.length; i++) {
     if (screenPasseLeft(xCarsLeft[i])) {
       xCarsLeft[i] = 0;
@@ -81,5 +81,5 @@ function screenPasseRight (xCarRight) {
 
 
 function screenPasseLeft (xCarLeft) {
-  return xCarLeft <- 450;
+  return xCarLeft > 450;
 }

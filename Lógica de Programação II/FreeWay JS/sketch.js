@@ -2,6 +2,7 @@
 
 function setup() {
   createCanvas(500, 300);
+  soundTrail.loop();
 }
 
 function draw() {
@@ -12,10 +13,12 @@ function draw() {
   showCarsLeft();
   moveCarsLeft();
   moveCarsRight();
-  startpointCarsRight();
-  startpointCarsLeft();
+  startPointCarsRight();
+  startPointCarsLeft();
   checkCollisionLeft();
   checkCollisionRight();
+  points();
+  brandPoint();
 }
 
 

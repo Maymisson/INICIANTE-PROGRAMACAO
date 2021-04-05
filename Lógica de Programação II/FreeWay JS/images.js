@@ -1,5 +1,6 @@
-// Variaveis e carregamento das imagens
+// Variaveis de carregamento
 
+// Imagens
 let imageRoad;
 let imageActor;
 let imageCar1;
@@ -8,6 +9,11 @@ let imageCar3;
 let imageCar4;
 let imageCar5;
 let imageCar6;
+
+// Sons
+let soundTrail;
+let soundCollision;
+let soundPoint;
 
 
 function preload() {
@@ -21,4 +27,8 @@ function preload() {
   imageCar6 = loadImage("images/carro-6.png");
   imageCarsRight = [imageCar1, imageCar2, imageCar3]
   imageCarsLeft = [imageCar4, imageCar5, imageCar6]
+  
+  soundTrail = loadSound("sounds/trilha.mp3");
+  soundCollision = loadSound("sounds/colidiu.mp3");
+  soundPoint = loadSound("sounds/pontos.wav");
 }
